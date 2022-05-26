@@ -6,12 +6,13 @@ import { LoginReqModel } from 'src/app/core/models/request';
 import { LoginResModel } from 'src/app/core/models/response';
 
 const tokenData =  'TOKEN_INFO';
+
 @Component({
-  selector: 'app-auth',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss']
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.scss']
 })
-export class AuthComponent implements OnInit {
+export class LoginComponent implements OnInit {
 
   form: FormGroup = new FormGroup({
     username: new FormControl(''),
