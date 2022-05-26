@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { EmployeeResModel } from 'src/app/core/models/response';
 import { EmployeeCreateReqModel } from 'src/app/core/models/request';
+import { NgbDateStruct } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-employee',
@@ -21,6 +22,10 @@ export class EmployeeComponent implements OnInit {
   showHideCreateElement: boolean = false;
   employeeData: EmployeeResModel[] = [];
   createRequest: EmployeeCreateReqModel = new EmployeeCreateReqModel();
+
+  today = new Date();
+  maxNgbDate: NgbDateStruct  = {year: this.today.getFullYear(), month: this.today.getMonth() + 1, day: this.today.getDate()};
+  minNgbDate: NgbDateStruct  = {year: this.today.getFullYear(), month: this.today.getMonth() + 1, day: this.today.getDate()-1};
 
   constructor(
     private _toastrService: ToastrService,

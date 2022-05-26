@@ -67,3 +67,13 @@
   }
 }
 
+.form-group.required .control-label:after {
+  content: "*";
+  color: #ff5252 !important;
+  margin-left: 4px !important;
+}
+
+label.control-label {
+  font-size: 14px !important;
+}
+
