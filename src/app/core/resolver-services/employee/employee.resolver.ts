@@ -1,16 +1,31 @@
 import { Injectable } from '@angular/core';
 import {
-  Router, Resolve,
+  Resolve,
   RouterStateSnapshot,
   ActivatedRouteSnapshot
 } from '@angular/router';
-import { Observable, of } from 'rxjs';
+import { empty, Observable } from 'rxjs';
+import { catchError, map } from 'rxjs/operators';
+import { EmployeeResModel, GeneralResModel } from '../../models/response';
+import { EmployeeService } from '../../services';
 
 @Injectable({
   providedIn: 'root'
 })
-export class EmployeeResolver implements Resolve<boolean> {
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean> {
-    return of(true);
+export class EmployeeResolver implements Resolve<GeneralResModel<EmployeeResModel[]>> {
+
+  constructor(
+    private _employeeService: EmployeeService
+  ) {}
+
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<GeneralResModel<EmployeeResModel[]>> {
+    return this._employeeService.getEmployeeList().pipe(
+      map(res => res),
+      catchError(error => {
+        return empty();
+      })
+    );
   }
 }
+
+
