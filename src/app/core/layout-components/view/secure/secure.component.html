@@ -1,1 +1,14 @@
-<p>secure works!</p>
+<div id="wrapper" class="secure-wrapper">
+  <app-sidebar></app-sidebar>
+  <!-- Content Wrapper -->
+  <div id="content-wrapper" class="d-flex flex-column">
+    <app-header></app-header>
+    <!-- Main Content -->
+    <div id="content">
+      <!-- Begin Page Content -->
+      <div class="container-fluid">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
