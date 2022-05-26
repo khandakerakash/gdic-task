@@ -12,6 +12,10 @@
 /* SB ADMIN THEME*/
 @import 'assets/sb-theme-style/sb-admin-2.scss';
 
+/* NG Wizard Form*/
+
+
+
 /*Utility CSS*/
 .row-highlight-primary {
   background-color: rgba(0, 0, 0, 0.03) !important;
@@ -37,6 +41,29 @@
 
   i {
     color: #111!important;
+  }
+}
+
+// Wizard
+
+.form-wizard {
+  .card {
+      border: 0;
+      .card-header {
+
+      }
+      .card-block {
+          .content {
+              padding: 2rem 0 0 0;
+              min-height: 24rem;
+          }
+      }
+      .card-footer {
+          padding: 0;
+          button {
+              @extend .btn-primary;
+          }
+      }
   }
 }
 

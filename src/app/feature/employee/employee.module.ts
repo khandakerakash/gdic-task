@@ -5,6 +5,7 @@ import { EmployeeRoutingModule } from './employee-routing.module';
 import { EmployeeComponent } from './components/employee/employee.component';
 import { NgbTooltipModule } from '@ng-bootstrap/ng-bootstrap';
 import { ReactiveFormsModule } from '@angular/forms';
+import { FormWizardModule } from 'angular2-wizard';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   imports: [
     CommonModule,
     NgbTooltipModule,
+    FormWizardModule,
     ReactiveFormsModule,
     EmployeeRoutingModule
   ]

@@ -1,49 +1,53 @@
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item active"><a routerLink="./dashboard">Dashboard</a></li>
-  </ol>
-</nav>
+<div class="row">
+  <div class="col-12">
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active"><a routerLink="./dashboard">Dashboard</a></li>
+      </ol>
+    </nav>
+  </div>
+</div>
 
 <div class="row">
-  <div class="px-4 mt-3">
-    <h1 class="display-5 font-monospace text-center mb-3">Welcome to Angular Task of GDIC</h1>
-    <div class="col-12 mx-auto">
-      <div class="card shadow mb-4">
-        <div class="card-header py-3">
-            <h6 class="m-0 font-weight-bold text-primary">Task Description is given below:</h6>
-        </div>
-        <div class="card-body">
-          <ol class="list-group">
-            <li class="list-group-item"><b>1. Please create a project using Angular version 12.x.x and reactive form.</b></li>
-            <li class="list-group-item">2. Create two modules such as Authentication and Employee (Use lazy loading)</li>
-            <li class="list-group-item">3. In Authentication module, there will be a Login Component that has two input field, Username and Password. (Use Reactive Forms, Form Validation (required))</li>
-            <li class="list-group-item">4. In the employee module, there will be an employee list and add new employee functionalities.</li>
-            <li class="list-group-item"><b>5. In the employee list route, using resolver service is mandatory.</b></li>
-            <li class="list-group-item">
-              6. In add to new employee, there will be three tabs where:
-              <ol class="list-disc ml-5">
-                <li>
-                  First tab contains employee basic information like First Name (required), Last Name,
-                  Date of Birth (required, maximum date previous day), Phone (required, value must
-                  be [0-9], minimum and maximum 11 char), Gender (required)
-                </li>
-                <li>
-                  Second tab contains employee skill information like Skill Name (required),
-                  Experience in Years (required), Skill Level (Beginner, Intermediate, Advanced)
-                  (required)
-                </li>
-                <li>
-                  Third tab contains preview of employee basic information and skill
-                </li>
-              </ol>
-            </li>
-            <li class="list-group-item"><b>7. Use the state management library (NGRX) to keep the form data when move one tab to another tab.</b></li>
-            <li class="list-group-item">8. Create a repository on GitHub and share the repository.</li>
-            <li class="list-group-item">9. For Employee List Demo API: <a href="https://dummy.restapiexample.com/api/v1/employees">Click Here</a></li>
-          </ol>
-          <div class="mt-2">
-            <b class="mr-1">N.B:</b> Please note that number 1, 5 and 7 are required to complete the task.
-          </div>
+  <div class="mx-auto mb-3">
+    <h1 class="display-5 font-monospace">Welcome to Angular Task of GDIC</h1>
+  </div>
+  <div class="col-12 mx-auto">
+    <div class="card shadow mb-4">
+      <div class="card-header py-3">
+          <h6 class="m-0 font-weight-bold text-primary">Task Description is given below:</h6>
+      </div>
+      <div class="card-body">
+        <ol class="list-group">
+          <li class="list-group-item"><b>1. Please create a project using Angular version 12.x.x and reactive form.</b></li>
+          <li class="list-group-item">2. Create two modules such as Authentication and Employee (Use lazy loading)</li>
+          <li class="list-group-item">3. In Authentication module, there will be a Login Component that has two input field, Username and Password. (Use Reactive Forms, Form Validation (required))</li>
+          <li class="list-group-item">4. In the employee module, there will be an employee list and add new employee functionalities.</li>
+          <li class="list-group-item"><b>5. In the employee list route, using resolver service is mandatory.</b></li>
+          <li class="list-group-item">
+            6. In add to new employee, there will be three tabs where:
+            <ol class="list-disc ml-5">
+              <li>
+                First tab contains employee basic information like First Name (required), Last Name,
+                Date of Birth (required, maximum date previous day), Phone (required, value must
+                be [0-9], minimum and maximum 11 char), Gender (required)
+              </li>
+              <li>
+                Second tab contains employee skill information like Skill Name (required),
+                Experience in Years (required), Skill Level (Beginner, Intermediate, Advanced)
+                (required)
+              </li>
+              <li>
+                Third tab contains preview of employee basic information and skill
+              </li>
+            </ol>
+          </li>
+          <li class="list-group-item"><b>7. Use the state management library (NGRX) to keep the form data when move one tab to another tab.</b></li>
+          <li class="list-group-item">8. Create a repository on GitHub and share the repository.</li>
+          <li class="list-group-item">9. For Employee List Demo API: <a href="https://dummy.restapiexample.com/api/v1/employees">Click Here</a></li>
+        </ol>
+        <div class="mt-2">
+          <b class="mr-1">N.B:</b> Please note that number 1, 5 and 7 are required to complete the task.
         </div>
       </div>
     </div>

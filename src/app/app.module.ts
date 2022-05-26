@@ -11,6 +11,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CoreModule } from './core/core.module';
 import { NgHttpLoaderModule } from 'ng-http-loader';
 
+
 @NgModule({
   declarations: [
     AppComponent
@@ -26,7 +27,7 @@ import { NgHttpLoaderModule } from 'ng-http-loader';
     ToastrModule.forRoot({
       timeOut: 4000,
       preventDuplicates: true,
-    }),
+    })
   ],
   providers: [
     {

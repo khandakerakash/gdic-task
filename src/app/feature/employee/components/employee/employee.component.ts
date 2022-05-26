@@ -11,8 +11,9 @@ import { EmployeeCreateReqModel } from 'src/app/core/models/request';
 })
 export class EmployeeComponent implements OnInit {
 
-  selectedName!: number;
+  isCompleted!: boolean;
 
+  selectedName!: number;
   infoLable: string = 'List Of';
   listBtn: boolean = false;
   createBtn: boolean = true;
@@ -61,16 +62,12 @@ export class EmployeeComponent implements OnInit {
     }
   }
 
-  private elementVisibility() {
-    this.infoLable = 'List Of';
-    this.listBtn = false;
-    this.createBtn = true;
-    this.listElement = true;
-    this.showHideCreateElement = false;
-  }
-
   highlightedRow(x: number) {
     this.selectedName = x;
+  }
+
+  onComplete(event: any) {
+    this.isCompleted = true;
   }
 }
 
